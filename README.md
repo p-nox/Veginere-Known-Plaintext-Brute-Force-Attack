@@ -15,15 +15,16 @@ This Python script provides a basic implementation of a cipher cracker using a b
 3. The script will output the decrypted message along with information about the cracking process.
 
 
-To execute: ```python script.py <cipherText> <knownPlainText> <keyLength>```
+To execute: ```python script_name.py <path_for_cipher> <path_for_plain> <key_length>```
 
- * **cipherText:** The cipher text to be decrypted.
- * **knownPlainText:** The known plain text used to verify the correctness of the decryption.
- * **keyLength:** The length of the key to be used in the brute-force attack
+ * **path_for_cipher:** The cipher text to be decrypted.
+ * **path_for_plain:** The known plain text used to verify the correctness of the decryption.
+ * **key_length:** The length of the key to be used in the brute-force attack
 
 
 ## Note
 
 This script is designed for educational purposes and may not be suitable for large key spaces or complex encryption algorithms. It uses a basic brute-force approach and may not be efficient for cryptographic purposes.
+Ensure that the provided plaintext is indeed present in the encrypted text, as the script relies on a known plaintext attack.
 
 Feel free to explore and modify the script based on your requirements.
