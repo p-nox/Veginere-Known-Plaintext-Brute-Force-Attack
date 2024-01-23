@@ -1,12 +1,12 @@
 # Simple Substitution Cipher Cracker
 
 ## Overview
-This Python script implements a brute-force approach to crack a simple substitution cipher. It takes a ciphertext and a known plaintext as input, along with the assumed key length. The script then generates all possible keys of the specified length and decrypts the ciphertext using each key until it finds a match with the known plaintext.
+This Python script provides a basic implementation of a cipher cracker using a brute-force approach to find the key for a given cipher text. It supports decryption of a cipher text by trying all possible combinations of a specified key length and comparing the result with a known plain text.
 
 ## Features
 - Brute-force approach to crack simple substitution cipher
 - Supports variable key length
-- Reports the total time taken and the number of attempts made
+- Provides information on the total time taken and the number of attempts made during the key-cracking process.
 - Example provided with encrypted message and known plaintext
 
 ## Usage
@@ -14,4 +14,16 @@ This Python script implements a brute-force approach to crack a simple substitut
 2. Run the script to perform the brute-force attack.
 3. The script will output the decrypted message along with information about the cracking process.
 
-## Example
+
+To execute: ```python script.py <cipherText> <knownPlainText> <keyLength>```
+
+ * **cipherText:** The cipher text to be decrypted.
+ * **knownPlainText:** The known plain text used to verify the correctness of the decryption.
+ * **keyLength:** The length of the key to be used in the brute-force attack
+
+
+## Note
+
+This script is designed for educational purposes and may not be suitable for large key spaces or complex encryption algorithms. It uses a basic brute-force approach and may not be efficient for cryptographic purposes.
+
+Feel free to explore and modify the script based on your requirements.
