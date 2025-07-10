@@ -3,17 +3,17 @@
 ## Overview
 This Python script provides a basic implementation of a cipher cracker using a brute-force approach to find the key for a given cipher text. It supports decryption of a cipher text by trying all possible combinations of a specified key length and comparing the result with a known plain text.
 
+---
+
 ## Features
 - Brute-force approach to crack simple substitution cipher
 - Supports variable key length
 - Provides information on the total time taken and the number of attempts made during the key-cracking process.
-- Example provided with encrypted message and known plaintext
+- Works with input files (ciphertext and plaintext)
+
+---
 
 ## Usage
-1. Input the ciphertext, known plaintext, and key length.
-2. Run the script to perform the brute-force attack.
-3. The script will output the decrypted message along with information about the cracking process.
-
 
 To execute: ```python script_name.py <path_for_cipher> <path_for_plain> <key_length>```
 
@@ -21,6 +21,16 @@ To execute: ```python script_name.py <path_for_cipher> <path_for_plain> <key_len
  * **path_for_plain:** The known plain text used to verify the correctness of the decryption.
  * **key_length:** The length of the key to be used in the brute-force attack
 
+---
+
+## Algorithm
+
+  * Uses itertools.product to generate all combinations of uppercase letters of the specified length.
+  * Tries each key and decrypts the ciphertext using a Vigenère decryption formula.
+  * Compares the resulting plaintext with the known text to find a match.
+  * Stops at the first correct match and prints time and attempt count.
+
+---
 
 ## Note
 
